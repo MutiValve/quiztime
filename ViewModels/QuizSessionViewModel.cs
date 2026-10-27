@@ -45,11 +45,9 @@ namespace PubQuizApp.ViewModels
             AvailableQuizzes = new ObservableCollection<QuizSummary>();
             Teams = new ObservableCollection<TeamScore>
             {
-                new TeamScore { TeamName = "Team Pub Stars", Score = 0 },
-                new TeamScore { TeamName = "Team Quizards", Score = 0 }
+  
             };
 
-            // Setup 1-second DispatcherTimer
             _timer = new DispatcherTimer
             {
                 Interval = TimeSpan.FromSeconds(1)
@@ -167,7 +165,6 @@ namespace PubQuizApp.ViewModels
             }
         }
 
-        // Timer Properties
         public int TimerSeconds
         {
             get => _timerSeconds;

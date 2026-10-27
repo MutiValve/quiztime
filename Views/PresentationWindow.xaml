@@ -254,9 +254,9 @@
         <Border Grid.Row="1" Background="{StaticResource BgCardBrush}" CornerRadius="20" Padding="40" BorderBrush="{StaticResource PurpleNeonBrush}" BorderThickness="2"
                 Visibility="{Binding IsQuizEnded, Converter={StaticResource BoolToVis}}">
             <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
-                <TextBlock Text="🎉 🍻 🏆" FontSize="72" HorizontalAlignment="Center" Margin="0,0,0,10"/>
+                <TextBlock FontSize="72" HorizontalAlignment="Center" Margin="0,0,0,10"/>
                 <TextBlock Text="QUIZ COMPLETED!" Foreground="{StaticResource TextMainBrush}" FontSize="48" FontWeight="ExtraBold" HorizontalAlignment="Center"/>
-                <TextBlock Text="Thank you for playing PubQuiz Central!" Foreground="{StaticResource TextMutedBrush}" FontSize="20" HorizontalAlignment="Center" Margin="0,10,0,30"/>
+                <TextBlock Foreground="{StaticResource TextMutedBrush}" FontSize="20" HorizontalAlignment="Center" Margin="0,10,0,30"><Run Text="Thank you for playing "/><Run Language="nl-nl" Text="my PubQuiz!"/><Run Text="!"/></TextBlock>
 
                 <!-- Team Leaderboard Box -->
                 <Border Background="#0E1422" CornerRadius="16" Padding="24" Width="500" BorderBrush="{StaticResource BorderBrush}" BorderThickness="1">
